@@ -8,7 +8,7 @@ function Alert({ message, type = 'info', onClose }) {
     const timer = setTimeout(() => {
       setVisible(false);
       if (onClose) onClose();
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [onClose]);

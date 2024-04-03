@@ -72,7 +72,6 @@ function App() {
 };
 
 useEffect(() => {
-  // 在 guessResult 更新后执行逻辑
   console.log(guessResult);
   if (guessResult && guessResult.length > 0) {
     if (guessResult[guessResult.length - 1].every(x => x === 2)) {
@@ -81,8 +80,7 @@ useEffect(() => {
       setShowAlert(true);
       setAlertMessage('You Succeed!');
     }
-    if (guessResult.length === 6) {
-      console.log('lost.');
+    else if (!win && guessResult.length === 6) {
       setGameOver(true);
       setShowAlert(true);
       setAlertMessage('You Lost!');

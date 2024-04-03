@@ -33,7 +33,7 @@ function Board({ currentGuess, guessHistory, guessResult }) {
     const score = guessScores[charIndex];
     if (score === 2) return 'correct'; // green
     if (score === 1) return 'present'; // yellow
-    return 'absent'; // gray
+    return 'absent'; // grey
   }
   
   export default Board;
