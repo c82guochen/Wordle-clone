@@ -10,7 +10,7 @@
     margin: 5px 0;
 }
   
-button, .longButton { 
+.keyClass, .longButton { 
     padding: 10px;
     margin: 2px;
     background-color: #f0f0f0;
@@ -21,7 +21,7 @@ button, .longButton {
     font-size: 20px;
 }
   
-button {
+.keyClass {
     width: 50px; 
     height: 50px; 
 }
@@ -33,3 +33,16 @@ button {
 button:active, .longButton:active { 
     background-color: #cbcaca;
 }
+
+.keyClass.correct {
+    background-color: rgb(140, 227, 140);
+    
+  }
+  
+.keyClass.present {
+    background-color: rgb(255, 255, 132);
+  }
+
+.keyClass.absent {
+    background-color: rgb(179, 179, 179);
+  }

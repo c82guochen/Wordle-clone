@@ -104,7 +104,7 @@ useEffect(() => {
     <div className="App">
       <header className="App-header">Wordle</header>
       <Board currentGuess={currentGuess} guessHistory={guessHistory} guessResult={guessResult} />
-      <Keyboard onKeyPress={handleKeyPress} />
+      <Keyboard onKeyPress={handleKeyPress} guessHistory={guessHistory} guessResult={guessResult}/>
       {showAlert && (
         <Alert
           message={alertMessage}
